@@ -1,0 +1,78 @@
+/* Variaveis */
+:root {
+    --vermelho: #E50913;
+    --preta: #141414;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos Basicos */
+body {
+    background: var(--preta);
+    font-family: 'Time New Roman', Times, serif;
+
+    color: white;
+}
+
+header {
+
+}
+
+header .container {
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+
+    /* Alinhar os intem no centro da box ou caixa do container*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    /* Retira as linhas em baixo links */
+    text-decoration: none;
+    color: #AAA;
+
+    /* Distanciamento dos links entre si*/
+    margin-right: 10px;
+}
+
+/* Ao passar o mouser em cima dos links */
+header nav a:hover {
+    color: #fff;
+}
+
+/* Filme Principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)100%), url(../img/img-01.jpg);
+
+    /* background-size vai oculpar toda a caixa filme-principal */
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 90px;
+}
+
+.titulo {
+    font-size: 40px;
+}
